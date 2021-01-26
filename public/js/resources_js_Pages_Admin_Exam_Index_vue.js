@@ -447,6 +447,28 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -463,7 +485,7 @@ __webpack_require__.r(__webpack_exports__);
     SearchFilter: _Component_Admin_SearchFilter__WEBPACK_IMPORTED_MODULE_5__.default
   },
   props: {
-    subjects: Object,
+    exams: Object,
     filters: Object
   },
   data: function data() {
@@ -478,7 +500,7 @@ __webpack_require__.r(__webpack_exports__);
       handler: _.throttle(function () {
         var query = _.pickBy(this.form);
 
-        this.$inertia.replace(route('admin.subjects.index', Object.keys(query).length ? query : {
+        this.$inertia.replace(route('admin.exams.index', Object.keys(query).length ? query : {
           remember: 'forget'
         }));
       }, 150),
@@ -2222,7 +2244,7 @@ var render = function() {
           staticClass:
             "text-xl text-gray-900 font-semibold border-b-2 border-gray-900"
         },
-        [_vm._v("All Subjects")]
+        [_vm._v("All Exams")]
       ),
       _vm._v(" "),
       _c(
@@ -2253,7 +2275,7 @@ var render = function() {
                     {
                       staticClass:
                         "btn-main px-3 py-2 text-sm font-semibold uppercase tracking-widest",
-                      attrs: { href: _vm.route("admin.subjects.create") }
+                      attrs: { href: _vm.route("admin.exams.create") }
                     },
                     [
                       _vm._v(
@@ -2281,6 +2303,22 @@ var render = function() {
                       _vm._v("Name")
                     ]),
                     _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Batch")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Questions")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Exam Date")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Status")
+                    ]),
+                    _vm._v(" "),
                     _c(
                       "th",
                       { staticClass: "px-6 pt-4 pb-4 font-normal text-center" },
@@ -2288,11 +2326,11 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._l(_vm.subjects.data, function(subject) {
+                  _vm._l(_vm.exams.data, function(exam) {
                     return _c(
                       "tr",
                       {
-                        key: subject.id,
+                        key: exam.id,
                         staticClass:
                           "hover:bg-gray-100 focus-within:bg-gray-100"
                       },
@@ -2300,7 +2338,7 @@ var render = function() {
                         _c("td", { staticClass: "border-t px-6 py-2" }, [
                           _vm._v(
                             "\n                            " +
-                              _vm._s(subject.name) +
+                              _vm._s(exam.name) +
                               "\n                        "
                           )
                         ]),
@@ -2311,7 +2349,51 @@ var render = function() {
                           [
                             _vm._v(
                               "\n                            " +
-                                _vm._s(subject.exams_count) +
+                                _vm._s(exam.batch.name) +
+                                "\n                        "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _vm._v(
+                              "\n                           " +
+                                _vm._s("0") +
+                                " / " +
+                                _vm._s(exam.total_question) +
+                                "\n                        "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(_vm._s(exam.exam_schedule.start))
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(" to ")
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(_vm._s(exam.exam_schedule.end))
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(exam.exam_status) +
                                 "\n                        "
                             )
                           ]
@@ -2324,32 +2406,21 @@ var render = function() {
                               "border-t px-6 py-2 text-center space-x-2"
                           },
                           [
-                            _c("show-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.show",
-                                  subject.id
+                            _c(
+                              "inertia-link",
+                              {
+                                staticClass:
+                                  "btn-main px-2 py-1 text-xs uppercase font-medium tracking-wider",
+                                attrs: {
+                                  href: _vm.route("admin.exams.show", exam.id)
+                                }
+                              },
+                              [
+                                _vm._v(
+                                  "\n                                Dashboard\n                            "
                                 )
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("edit-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.edit",
-                                  subject.id
-                                )
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("delete-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.destroy",
-                                  subject.id
-                                )
-                              }
-                            })
+                              ]
+                            )
                           ],
                           1
                         )
@@ -2357,7 +2428,7 @@ var render = function() {
                     )
                   }),
                   _vm._v(" "),
-                  _vm.subjects.data.length === 0
+                  _vm.exams.data.length === 0
                     ? _c("tr", [
                         _c(
                           "td",
@@ -2365,7 +2436,7 @@ var render = function() {
                             staticClass: "border-t px-6 py-4",
                             attrs: { colspan: "5" }
                           },
-                          [_vm._v("No subjects found.")]
+                          [_vm._v("No exams found.")]
                         )
                       ])
                     : _vm._e()
@@ -2375,8 +2446,8 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm.subjects.data.length
-            ? _c("pagination", { attrs: { links: _vm.subjects.links } })
+          _vm.exams.data.length
+            ? _c("pagination", { attrs: { links: _vm.exams.links } })
             : _vm._e()
         ],
         1
@@ -2837,7 +2908,10 @@ var render = function() {
           _c(
             "sidebar-nav",
             {
-              attrs: { href: "#", active: false },
+              attrs: {
+                href: _vm.route("admin.exams.index"),
+                active: _vm.route().current("admin.exams.index")
+              },
               scopedSlots: _vm._u([
                 {
                   key: "icon",

@@ -1073,6 +1073,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -5564,6 +5568,20 @@ var render = function() {
                                       [
                                         _vm._v(
                                           "\n                                        Profile\n                                    "
+                                        )
+                                      ]
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "jet-dropdown-link",
+                                      {
+                                        attrs: {
+                                          href: _vm.route("admin.dashboard")
+                                        }
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                                        Admin\n                                    "
                                         )
                                       ]
                                     ),

@@ -247,8 +247,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   data: function data() {
     return {
       form: this.$inertia.form({
-        email: '',
-        password: '',
+        email: 'admin@app.com',
+        password: 'password',
         remember: false
       })
     };

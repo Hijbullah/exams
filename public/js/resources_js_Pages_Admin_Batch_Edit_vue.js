@@ -16276,7 +16276,10 @@ var render = function() {
           _c(
             "sidebar-nav",
             {
-              attrs: { href: "#", active: false },
+              attrs: {
+                href: _vm.route("admin.exams.index"),
+                active: _vm.route().current("admin.exams.index")
+              },
               scopedSlots: _vm._u([
                 {
                   key: "icon",

@@ -2,10 +2,11 @@
 
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\BatchController;
 use App\Http\Controllers\Admin\ExamController;
-use App\Http\Controllers\Admin\ExamTypeController;
+use App\Http\Controllers\Admin\BatchController;
 use App\Http\Controllers\Admin\SubjectController;
+use App\Http\Controllers\Admin\ExamTypeController;
+use App\Http\Controllers\Admin\QuestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,6 +42,7 @@ Route::name('admin.')->group(function() {
     Route::resource('/subjects', SubjectController::class);
     Route::resource('/exams', ExamController::class);
 
+    Route::get('/exams/{exam}/Questions', [QuestionController::class, 'index'])->name('questions.index');
 
 
 });

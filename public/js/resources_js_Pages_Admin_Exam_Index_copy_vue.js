@@ -1,4 +1,4 @@
-(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Admin_Subject_Index_vue"],{
+(self["webpackChunk"] = self["webpackChunk"] || []).push([["resources_js_Pages_Admin_Exam_Index_copy_vue"],{
 
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Component/Admin/ActionButton/Delete.vue?vue&type=script&lang=js&":
 /*!*******************************************************************************************************************************************************************************************************************************!*\
@@ -375,10 +375,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -392,6 +392,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Component_Admin_ActionButton_Delete__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Component/Admin/ActionButton/Delete */ "./resources/js/Component/Admin/ActionButton/Delete.vue");
 /* harmony import */ var _Component_Admin_Pagination__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/Component/Admin/Pagination */ "./resources/js/Component/Admin/Pagination.vue");
 /* harmony import */ var _Component_Admin_SearchFilter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/Component/Admin/SearchFilter */ "./resources/js/Component/Admin/SearchFilter.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -463,7 +480,7 @@ __webpack_require__.r(__webpack_exports__);
     SearchFilter: _Component_Admin_SearchFilter__WEBPACK_IMPORTED_MODULE_5__.default
   },
   props: {
-    subjects: Object,
+    exams: Object,
     filters: Object
   },
   data: function data() {
@@ -478,7 +495,7 @@ __webpack_require__.r(__webpack_exports__);
       handler: _.throttle(function () {
         var query = _.pickBy(this.form);
 
-        this.$inertia.replace(route('admin.subjects.index', Object.keys(query).length ? query : {
+        this.$inertia.replace(route('admin.exams.index', Object.keys(query).length ? query : {
           remember: 'forget'
         }));
       }, 150),
@@ -1074,10 +1091,10 @@ component.options.__file = "resources/js/Layouts/AdminLayout.vue"
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Admin/Subject/Index.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/Pages/Admin/Subject/Index.vue ***!
-  \****************************************************/
+/***/ "./resources/js/Pages/Admin/Exam/Index copy.vue":
+/*!******************************************************!*\
+  !*** ./resources/js/Pages/Admin/Exam/Index copy.vue ***!
+  \******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1085,8 +1102,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=dbef24d4& */ "./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index copy.vue?vue&type=template&id=3304604c& */ "./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c&");
+/* harmony import */ var _Index_copy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index copy.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1096,9 +1113,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
-  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
-  _Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__.render,
-  _Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _Index_copy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -1108,7 +1125,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Admin/Subject/Index.vue"
+component.options.__file = "resources/js/Pages/Admin/Exam/Index copy.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -1372,10 +1389,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/***/ "./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -1383,8 +1400,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=script&lang=js&");
- /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_copy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index copy.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_copy_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
 
 /***/ }),
 
@@ -1573,19 +1590,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c&":
+/*!*************************************************************************************!*\
+  !*** ./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c& ***!
+  \*************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__.render,
-/* harmony export */   "staticRenderFns": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns
+/* harmony export */   "render": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__.render,
+/* harmony export */   "staticRenderFns": () => /* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_dbef24d4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index.vue?vue&type=template&id=dbef24d4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_copy_vue_vue_type_template_id_3304604c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Index copy.vue?vue&type=template&id=3304604c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c&");
 
 
 /***/ }),
@@ -2198,10 +2215,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Subject/Index.vue?vue&type=template&id=dbef24d4& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Admin/Exam/Index copy.vue?vue&type=template&id=3304604c& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -2222,7 +2239,7 @@ var render = function() {
           staticClass:
             "text-xl text-gray-900 font-semibold border-b-2 border-gray-900"
         },
-        [_vm._v("All Subjects")]
+        [_vm._v("All Exams")]
       ),
       _vm._v(" "),
       _c(
@@ -2253,7 +2270,7 @@ var render = function() {
                     {
                       staticClass:
                         "btn-main px-3 py-2 text-sm font-semibold uppercase tracking-widest",
-                      attrs: { href: _vm.route("admin.subjects.create") }
+                      attrs: { href: _vm.route("admin.exams.create") }
                     },
                     [
                       _vm._v(
@@ -2281,6 +2298,22 @@ var render = function() {
                       _vm._v("Name")
                     ]),
                     _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Batch")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Questions")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Exam Date")
+                    ]),
+                    _vm._v(" "),
+                    _c("th", { staticClass: "px-6 pt-4 pb-4 font-normal" }, [
+                      _vm._v("Status")
+                    ]),
+                    _vm._v(" "),
                     _c(
                       "th",
                       { staticClass: "px-6 pt-4 pb-4 font-normal text-center" },
@@ -2288,11 +2321,11 @@ var render = function() {
                     )
                   ]),
                   _vm._v(" "),
-                  _vm._l(_vm.subjects.data, function(subject) {
+                  _vm._l(_vm.exams.data, function(exam) {
                     return _c(
                       "tr",
                       {
-                        key: subject.id,
+                        key: exam.id,
                         staticClass:
                           "hover:bg-gray-100 focus-within:bg-gray-100"
                       },
@@ -2300,7 +2333,7 @@ var render = function() {
                         _c("td", { staticClass: "border-t px-6 py-2" }, [
                           _vm._v(
                             "\n                            " +
-                              _vm._s(subject.name) +
+                              _vm._s(exam.name) +
                               "\n                        "
                           )
                         ]),
@@ -2311,7 +2344,51 @@ var render = function() {
                           [
                             _vm._v(
                               "\n                            " +
-                                _vm._s(subject.exams_count) +
+                                _vm._s(exam.batch.name) +
+                                "\n                        "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _vm._v(
+                              "\n                           " +
+                                _vm._s("0") +
+                                " / " +
+                                _vm._s(exam.total_question) +
+                                "\n                        "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(_vm._s(exam.exam_schedule.start))
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(" to ")
+                            ]),
+                            _vm._v(" "),
+                            _c("span", { staticClass: "block" }, [
+                              _vm._v(_vm._s(exam.exam_schedule.end))
+                            ])
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          { staticClass: "border-t px-6 py-2 text-center" },
+                          [
+                            _vm._v(
+                              "\n                            " +
+                                _vm._s(exam.exam_status) +
                                 "\n                        "
                             )
                           ]
@@ -2324,40 +2401,24 @@ var render = function() {
                               "border-t px-6 py-2 text-center space-x-2"
                           },
                           [
-                            _c("show-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.show",
-                                  subject.id
-                                )
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("edit-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.edit",
-                                  subject.id
-                                )
-                              }
-                            }),
-                            _vm._v(" "),
-                            _c("delete-button", {
-                              attrs: {
-                                href: _vm.route(
-                                  "admin.subjects.destroy",
-                                  subject.id
-                                )
-                              }
-                            })
-                          ],
-                          1
+                            _c(
+                              "a",
+                              {
+                                staticClass:
+                                  "btn-main px-2 py-1 text-xs uppercase font-medium tracking-wider",
+                                attrs: {
+                                  href: _vm.route("admin.exams.show", exam.id)
+                                }
+                              },
+                              [_vm._v("Dashboard")]
+                            )
+                          ]
                         )
                       ]
                     )
                   }),
                   _vm._v(" "),
-                  _vm.subjects.data.length === 0
+                  _vm.exams.data.length === 0
                     ? _c("tr", [
                         _c(
                           "td",
@@ -2365,7 +2426,7 @@ var render = function() {
                             staticClass: "border-t px-6 py-4",
                             attrs: { colspan: "5" }
                           },
-                          [_vm._v("No subjects found.")]
+                          [_vm._v("No exams found.")]
                         )
                       ])
                     : _vm._e()
@@ -2375,8 +2436,8 @@ var render = function() {
             ]
           ),
           _vm._v(" "),
-          _vm.subjects.data.length
-            ? _c("pagination", { attrs: { links: _vm.subjects.links } })
+          _vm.exams.data.length
+            ? _c("pagination", { attrs: { links: _vm.exams.links } })
             : _vm._e()
         ],
         1

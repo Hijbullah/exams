@@ -33023,6 +33023,14 @@ var map = {
 		"./resources/js/Pages/Admin/Exam/Index.vue",
 		"resources_js_Pages_Admin_Exam_Index_vue"
 	],
+	"./Admin/Exam/Show": [
+		"./resources/js/Pages/Admin/Exam/Show.vue",
+		"resources_js_Pages_Admin_Exam_Show_vue"
+	],
+	"./Admin/Exam/Show.vue": [
+		"./resources/js/Pages/Admin/Exam/Show.vue",
+		"resources_js_Pages_Admin_Exam_Show_vue"
+	],
 	"./Admin/ExamType/Create": [
 		"./resources/js/Pages/Admin/ExamType/Create.vue",
 		"resources_js_Pages_Admin_ExamType_Create_vue"
@@ -33046,6 +33054,46 @@ var map = {
 	"./Admin/ExamType/Index.vue": [
 		"./resources/js/Pages/Admin/ExamType/Index.vue",
 		"resources_js_Pages_Admin_ExamType_Index_vue"
+	],
+	"./Admin/Question/AddQuestion": [
+		"./resources/js/Pages/Admin/Question/AddQuestion.vue",
+		"resources_js_Pages_Admin_Question_AddQuestion_vue"
+	],
+	"./Admin/Question/AddQuestion.vue": [
+		"./resources/js/Pages/Admin/Question/AddQuestion.vue",
+		"resources_js_Pages_Admin_Question_AddQuestion_vue"
+	],
+	"./Admin/Question/Index": [
+		"./resources/js/Pages/Admin/Question/Index.vue",
+		"resources_js_Pages_Admin_Question_Index_vue"
+	],
+	"./Admin/Question/Index.vue": [
+		"./resources/js/Pages/Admin/Question/Index.vue",
+		"resources_js_Pages_Admin_Question_Index_vue"
+	],
+	"./Admin/Question/New folder/EditQuestion": [
+		"./resources/js/Pages/Admin/Question/New folder/EditQuestion.vue",
+		"resources_js_Pages_Admin_Question_New_folder_EditQuestion_vue"
+	],
+	"./Admin/Question/New folder/EditQuestion.vue": [
+		"./resources/js/Pages/Admin/Question/New folder/EditQuestion.vue",
+		"resources_js_Pages_Admin_Question_New_folder_EditQuestion_vue"
+	],
+	"./Admin/Question/New folder/Question": [
+		"./resources/js/Pages/Admin/Question/New folder/Question.vue",
+		"resources_js_Pages_Admin_Question_New_folder_Question_vue"
+	],
+	"./Admin/Question/New folder/Question.vue": [
+		"./resources/js/Pages/Admin/Question/New folder/Question.vue",
+		"resources_js_Pages_Admin_Question_New_folder_Question_vue"
+	],
+	"./Admin/Question/New folder/QuestionUploadZone": [
+		"./resources/js/Pages/Admin/Question/New folder/QuestionUploadZone.vue",
+		"resources_js_Pages_Admin_Question_New_folder_QuestionUploadZone_vue"
+	],
+	"./Admin/Question/New folder/QuestionUploadZone.vue": [
+		"./resources/js/Pages/Admin/Question/New folder/QuestionUploadZone.vue",
+		"resources_js_Pages_Admin_Question_New_folder_QuestionUploadZone_vue"
 	],
 	"./Admin/Subject/Create": [
 		"./resources/js/Pages/Admin/Subject/Create.vue",
@@ -33305,7 +33353,7 @@ module.exports = webpackAsyncContext;
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_API_ApiTokenManager_vue":"553a5cebe9bd36d841e4","resources_js_Pages_API_Index_vue":"1691150e97e9e8cb381e","resources_js_Pages_Admin_Batch_Create_vue":"3d98132de95fc5498826","resources_js_Pages_Admin_Batch_Edit_vue":"c5cca96b5978463e9a53","resources_js_Pages_Admin_Batch_Index_vue":"f49e3df6206e1d172149","resources_js_Pages_Admin_Dashboard_vue":"41352172b4c8fdf7504a","resources_js_Pages_Admin_Exam_Create_vue":"b3e3a6cf86a09253a41b","resources_js_Pages_Admin_Exam_Edit_vue":"83c9f9b2aa0771231053","resources_js_Pages_Admin_Exam_Index_vue":"c01576c2a9a965655fc1","resources_js_Pages_Admin_ExamType_Create_vue":"395d612f257bc0605e74","resources_js_Pages_Admin_ExamType_Edit_vue":"72688e20863cbc7968a4","resources_js_Pages_Admin_ExamType_Index_vue":"77fef625d4f7bfd1db6a","resources_js_Pages_Admin_Subject_Create_vue":"84fedbe7896f2731b379","resources_js_Pages_Admin_Subject_Edit_vue":"d1d0659a325b8b488de0","resources_js_Pages_Admin_Subject_Index_vue":"3abbc54b8566c500e606","resources_js_Pages_Auth_ConfirmPassword_vue":"4ff11222f1b11e444f1f","resources_js_Pages_Auth_ForgotPassword_vue":"524f342da4f9f05659bc","resources_js_Pages_Auth_Login_vue":"47572080e0eb16a09172","resources_js_Pages_Auth_Register_vue":"1421b1900badccc1592a","resources_js_Pages_Auth_ResetPassword_vue":"ffcd1ab866fca68a9ecf","resources_js_Pages_Auth_TwoFactorChallenge_vue":"d7438dc25611a510d766","resources_js_Pages_Auth_VerifyEmail_vue":"151511380bb43248bfba","resources_js_Pages_Dashboard_vue":"9c271c35f9b5d3a4e556","resources_js_Pages_PrivacyPolicy_vue":"600b12fd731ce314c5bc","resources_js_Pages_Profile_DeleteUserForm_vue":"84ec7bff8dee90865277","resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue":"81146ab93044c3edb69b","resources_js_Pages_Profile_Show_vue":"4aa7b6559dbabfb9358d","resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue":"2749f39963a8366d2e74","resources_js_Pages_Profile_UpdatePasswordForm_vue":"6392e13f4a18dd722771","resources_js_Pages_Profile_UpdateProfileInformationForm_vue":"de393e29f0e93e39d275","resources_js_Pages_TermsOfService_vue":"bd86bbeb123c0eeba1e2","resources_js_Pages_Welcome_vue":"c73b58e78aed31d2083e"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_API_ApiTokenManager_vue":"553a5cebe9bd36d841e4","resources_js_Pages_API_Index_vue":"877bd9279aab1559b4c4","resources_js_Pages_Admin_Batch_Create_vue":"c966340af0827d24717f","resources_js_Pages_Admin_Batch_Edit_vue":"981802737bd24ba2c22a","resources_js_Pages_Admin_Batch_Index_vue":"ec94c89f4f1ac0b876cf","resources_js_Pages_Admin_Dashboard_vue":"3d924822b5e509113dd4","resources_js_Pages_Admin_Exam_Create_vue":"8d41454d42275d0b9215","resources_js_Pages_Admin_Exam_Edit_vue":"c655f93716aca50716ec","resources_js_Pages_Admin_Exam_Index_vue":"07129306bcf327305368","resources_js_Pages_Admin_Exam_Show_vue":"548fb118d7d870e4feac","resources_js_Pages_Admin_ExamType_Create_vue":"716547988edd40c11613","resources_js_Pages_Admin_ExamType_Edit_vue":"3c9d6034dea80cda40c6","resources_js_Pages_Admin_ExamType_Index_vue":"d74039a7457626b6603c","resources_js_Pages_Admin_Question_AddQuestion_vue":"3dc2259cc72c9b67ce7f","resources_js_Pages_Admin_Question_Index_vue":"b27f6f78965befcb8b7a","resources_js_Pages_Admin_Question_New_folder_EditQuestion_vue":"751b9b9e9666d5601c65","resources_js_Pages_Admin_Question_New_folder_Question_vue":"058d5eb5a86a280fdc05","resources_js_Pages_Admin_Question_New_folder_QuestionUploadZone_vue":"381b752d37cec0cfd339","resources_js_Pages_Admin_Subject_Create_vue":"931801053c74c5cdd711","resources_js_Pages_Admin_Subject_Edit_vue":"6dc9c601b760da2c8acf","resources_js_Pages_Admin_Subject_Index_vue":"ba4eaeb086f75850421e","resources_js_Pages_Auth_ConfirmPassword_vue":"4ff11222f1b11e444f1f","resources_js_Pages_Auth_ForgotPassword_vue":"524f342da4f9f05659bc","resources_js_Pages_Auth_Login_vue":"d52b27e1e7dd9c23d9b7","resources_js_Pages_Auth_Register_vue":"1421b1900badccc1592a","resources_js_Pages_Auth_ResetPassword_vue":"ffcd1ab866fca68a9ecf","resources_js_Pages_Auth_TwoFactorChallenge_vue":"d7438dc25611a510d766","resources_js_Pages_Auth_VerifyEmail_vue":"151511380bb43248bfba","resources_js_Pages_Dashboard_vue":"264548c6c0f213f5c93e","resources_js_Pages_PrivacyPolicy_vue":"600b12fd731ce314c5bc","resources_js_Pages_Profile_DeleteUserForm_vue":"84ec7bff8dee90865277","resources_js_Pages_Profile_LogoutOtherBrowserSessionsForm_vue":"81146ab93044c3edb69b","resources_js_Pages_Profile_Show_vue":"aedf79deb0af38913b2b","resources_js_Pages_Profile_TwoFactorAuthenticationForm_vue":"2749f39963a8366d2e74","resources_js_Pages_Profile_UpdatePasswordForm_vue":"6392e13f4a18dd722771","resources_js_Pages_Profile_UpdateProfileInformationForm_vue":"de393e29f0e93e39d275","resources_js_Pages_TermsOfService_vue":"bd86bbeb123c0eeba1e2","resources_js_Pages_Welcome_vue":"c73b58e78aed31d2083e"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	

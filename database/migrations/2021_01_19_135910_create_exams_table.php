@@ -31,8 +31,8 @@ class CreateExamsTable extends Migration
             $table->integer('total_question')->nullable();
             $table->string('pass_mark')->nullable()->comment('percentage or number');
             $table->integer('exam_duration')->nullable()->comment('in minute');
-            $table->boolean('has_negetive_mark')->default(false);
-            $table->float('negetive_mark')->default(0.25);
+            $table->boolean('has_negative_mark')->default(false);
+            $table->float('negative_mark')->default(0.25);
 
             $table->timestamp('exam_started_at')->nullable();
             $table->timestamp('exam_ended_at')->nullable();
